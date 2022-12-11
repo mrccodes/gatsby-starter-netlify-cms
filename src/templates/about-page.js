@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import WhoWeAre from "../components/WhoWeAre";
 
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
@@ -18,6 +19,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+            </div>
+            <div className="section">
+              <h3 className="title is-size-3 has-text-weight-bold is-bold-light">
+                Meet Our Team
+              </h3>
+               <WhoWeAre />
             </div>
           </div>
         </div>

@@ -133,6 +133,19 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - {
+            label: "Employees",
+            name: "employees",
+            widget: "list",
+            fields: 
+              [
+                { label: Image, name: image, widget: image },
+                { label: Alt, name: alt, widget: string },
+                { label: Name, name: name, widget: string },
+                { label: Role, name: role, widget: string},
+                { label: Bio, name: bio, widget: string}
+              ]
+          }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
