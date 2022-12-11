@@ -53,6 +53,8 @@ $black: #2b2523
     justify-content: center
     align-items: center
 
+
+
 .text-blur
     backdrop-filter: blur(8px)
 
@@ -117,6 +119,7 @@ $menu-label-color: #fff // $white-ter
     height: 1em
     vertical-align: middle
     display: inline
+      
 
 // blog roll
 .blog-list-item.is-featured
@@ -135,6 +138,11 @@ $menu-label-color: #fff // $white-ter
 
 @import "~bulma"
 
+.resonsive-flex
+  display: flex
+  +mobile
+    flex-direction: column !important
+
 //hero overrides
 .hero-title-wrapper
   // By using the same grid area for both, they are stacked on top of each other
@@ -143,7 +151,9 @@ $menu-label-color: #fff // $white-ter
   // centers title text in wrapper area
   place-items: center
   display: grid
+  text-align: center
   +desktop
+    text-align: left
     width: 100%
     place-items: flex-start
     margin: 0 auto

@@ -2,8 +2,10 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const PreviewCompatibleImage = ({ imageInfo, }) => {
-  const imageStyle = { borderRadius:  "5px" };
+const PreviewCompatibleImage = ({ imageInfo, round = false }) => {
+  const imageStyle = { 
+    borderRadius: round ? "50%" : "5px" 
+  };
 
   const { alt = "", childImageSharp, image } = imageInfo;
 
@@ -22,7 +24,6 @@ const PreviewCompatibleImage = ({ imageInfo, }) => {
         image={childImageSharp.gatsbyImageData}
         style={imageStyle}
         objectFit="contain"
-
         alt={alt}
       />
     );
@@ -30,7 +31,7 @@ const PreviewCompatibleImage = ({ imageInfo, }) => {
   } else if (image) {
     return (
       <figure className="image">
-        <img style={{imageStyle}} src={image} alt={alt} />
+        <img  style={{imageStyle}} src={image} alt={alt} />
       </figure>
     );
   } else {
@@ -45,6 +46,7 @@ PreviewCompatibleImage.propTypes = {
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
     style: PropTypes.object,
   }).isRequired,
+  round: PropTypes.bool
 };
 
 export default PreviewCompatibleImage;
