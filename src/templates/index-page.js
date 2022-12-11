@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                    <div className="tile">
+                    <div className="tile is-4">
                       <h1 className="title">{mainpitch.title}</h1>
                     </div>
                     <div className="tile">
@@ -53,7 +53,8 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div>
                   </div>
-                  <div className="column is-12">
+                  {/* UNCOMMENT FOR FEATURED BLOGS COMPONENT */}
+                  {/* <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       Latest stories
                     </h3>
@@ -63,7 +64,7 @@ export const IndexPageTemplate = ({
                         Read more
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

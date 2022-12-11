@@ -39,9 +39,26 @@ const Footer = () => {
                         Products
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/contact/examples">
                         Form Examples
+                      </Link>
+                    </li> */}
+                  </ul>
+                </section>
+              </div>
+              <div className="column is-4">
+                <section>
+                  <ul className="menu-list">
+                    {/* UNCOMMENT FOR BLOG COMPONENT */}
+                    {/* <li>
+                      <Link className="navbar-item" to="/blog">
+                        Latest Stories
+                      </Link>
+                    </li> */}
+                    <li>
+                      <Link className="navbar-item" to="/contact">
+                        Contact
                       </Link>
                     </li>
                     <li>
@@ -53,22 +70,6 @@ const Footer = () => {
                       >
                         Admin
                       </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
                     </li>
                   </ul>
                 </section>
