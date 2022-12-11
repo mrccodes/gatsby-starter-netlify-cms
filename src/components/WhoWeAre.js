@@ -54,7 +54,7 @@ const EmployeeCard = ({ employee, count }) => {
                 alt="Open Quotation Mark"
                 style={{ width: "2em", height: "3em" }}
                  />
-                <p className="is-size-5">{employee.bio}</p>
+                <p className="is-size-5 has-text-centered">{employee.bio}</p>
                 <img
                 className="is-align-self-flex-end"
                 src={quoteClose}
