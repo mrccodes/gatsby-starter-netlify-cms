@@ -94,7 +94,7 @@ export default function WhoWeAre() {
                         employees {
                             image {
                                 childImageSharp {
-                                    gatsbyImageData(width: 250, height: 300, quality: 64, layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
+                                    gatsbyImageData(width: 120, height: 120, quality: 64, layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
                                 }
                             }
                             bio

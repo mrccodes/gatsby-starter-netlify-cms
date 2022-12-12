@@ -1,0 +1,13 @@
+
+
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .mrc {
+      font-family: Arial Black;
+      fill: #FD461E;
+      font-size:100px
+    }
+  </style>
+
+  <text x="0" y="66" class="mrc">mrc.</text>
+</svg>
