@@ -70,8 +70,8 @@ WhoWeAre.propTypes = {
     data: PropTypes.shape({
         markdownRemark: PropTypes.shape({
           frontmatter: PropTypes.shape({
-            employees: PropTypes.array,
-            employeesWidget: PropTypes.shape({
+              employeesWidget: PropTypes.shape({
+                employees: PropTypes.array,
                 enabled: PropTypes.bool
             })
           }),
