@@ -162,6 +162,14 @@ $menu-label-color: #fff // $white-ter
 
 
 // responsiveness
+
++tablet
+  .mobile-only
+    display: none !important
+  .desktop-only
+    display: static
+
+
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
@@ -173,3 +181,7 @@ $menu-label-color: #fff // $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
+  .desktop-only 
+    display: none 
+  .mobile-only
+    display: static

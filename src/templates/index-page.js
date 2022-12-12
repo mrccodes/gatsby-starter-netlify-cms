@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 // import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import MainPitch from "../components/Mainpitch";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -29,14 +30,7 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="content">
-                    <div className="tile is-4">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                  </div>
+                  <MainPitch imageData={mainpitch.image} alt={mainpitch.alt} title={mainpitch.title} description={mainpitch.description}/>
                   <div className="columns">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
@@ -130,6 +124,12 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          image {
+            childImageSharp {
+                gatsbyImageData(quality: 64, aspectRatio: 1, layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
+            }
+        }
+          alt
         }
         description
         intro {
